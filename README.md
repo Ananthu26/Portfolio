@@ -11,7 +11,6 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 </p>
   &#xa0;
 
-
 >Crafting experiences, one line of code at a time.
 <br><br>
 
@@ -21,7 +20,9 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
- The following tools **will be** used in this project in near Future:  
+<div>
+  
+ The following tools **will be** used in this project in near Future _Hopefully_ 🤞:  
 
 - [Bootstrap](https://getbootstrap.com/)
 - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -29,7 +30,8 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 - [React](https://react.dev/)
 - [MongoDB](https://www.mongodb.com/)
 - [ExpressJS](https://expressjs.com/)
-
+- 
+</div>
 
 ## :checkered_flag: Welcome Page ##
 
