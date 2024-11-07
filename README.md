@@ -1,6 +1,4 @@
-
 ![Screenshot](./Screenshots/portfolio%20logo.PNG)
-
 <h1 align="center">Portfolio</h1>
 
 <p align="center">
