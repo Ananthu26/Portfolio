@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  ![Screenshot](./Screenshots/portfolio%20logo.jpg)
+  ![Screenshot](./Screenshots/portfolio%20logo.png)
 </div>
 
 <h1 align="center">Portfolio</h1>
