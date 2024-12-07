@@ -22,16 +22,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 <div>
   
- The following tools **will be** used in this project in near Future _Hopefully_ 🤞:  
 
-- [Bootstrap](https://getbootstrap.com/)
-- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [NodeJS](https://nodejs.org/en/)
-- [React](https://react.dev/)
-- [MongoDB](https://www.mongodb.com/)
-- [ExpressJS](https://expressjs.com/)
-- 
-</div>
 
 ## :checkered_flag: Welcome Page ##
 
