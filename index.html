@@ -5,107 +5,739 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AX</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
-  <link rel="stylesheet" href="Main-style.css" />
-  <link rel="stylesheet" href="Mid-box-style.css" />
-  <link rel="stylesheet" href="Footer-style.css" />
-  <link rel="stylesheet" href="Gallery-style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+  <style>
+   
+  </style>
 </head>
 
-<body>
-  <div class="main-container">
-    <div class="rectangle">
-      <span class="ax">--Ax--</span>
+<body class="bg-dark text-light-dark">
+  <nav class="fixed w-full bg-dark-light/90 backdrop-blur-md z-50 py-4 glow-accent">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <span class="text-2xl font-mono text-accent font-semibold text-glow">AX</span>
+      <div class="space-x-8 font-medium text-sm">
+        <a href="#about" class="hover:text-accent transition-colors">About</a>
+        <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+      </div>
     </div>
-    <div><img src="./images/Subject.png" class="i11"></img></div>
-    <div><img src="./images/Subject 2.png" class="i12"></img></div>
-    <div class="abs">
-      <span class="intro"><br>bonjour.<br />i’m <br />
-        ananthakrishnan.
-      </span>
-      <span class="bio">Aspiring computer scientist with a passion for problem-solving and
-        coding. Recently graduated with a Bachelor's in Computer Science.
-        Skilled in Java, Python and web development.
-      </span>
-      <div class="space-btn">
-        <button class="button" id="btn">
-          <div class="btn-layer" id="btn-id">
-            <div class="icon">
-              <div class="icon-11"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-            <span class="download-cv" id="kk1">Say hi</span>
-          </div>
-        </button>
-        <button class="button">
-          <div class="btn-layer">
-            <div class="icon">
-              <div class="icon-1"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-            <span class="download-cv">Download Cv</span>
-          </div>
+  </nav>
 
-        </button>
+  <div class="container mx-auto px-4 pt-32" id="about">
+    <div class="flex flex-col-reverse md:flex-row items-center justify-between relative gap-8 md:gap-0" >
+      <!-- Text content -->
+      <div class="max-w-2xl z-10 text-center md:text-left" >
+        <p class="text-accent font-mono mb-4 text-sm tracking-wider">Hi, my name is</p>
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-4 text-light bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent text-glow">
+          Ananthakrishnan.
+        </h1>
+        <h2 class="text-2xl md:text-4xl font-semibold text-light-dark mb-6">
+          Full Stack Developer • Software Developer • Tech Enthusiast
+        </h2>
+        <p class="text-base md:text-lg text-light-dark/80 mb-8 max-w-xl leading-relaxed">
+          I'm passionate about building web applications and exploring technology- 
+          From Programming to setting up servers and building PCs. 
+          Combining software engineering with hands-on hardware and networking expertise.
+        </p>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="https://www.linkedin.com/messaging/compose/?to=ananth26" target="_blank"
+            class="bg-accent hover:bg-accent-dark text-light px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 shadow-lg shadow-accent/20 glow-accent">
+            Say hi
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ananth26" target="_blank"
+            class="border-2 border-accent text-accent hover:bg-accent hover:text-light px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300">
+            Download CV
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="photo-gallery">
-      <img src="./images/ms (Custom).png" class="i1"></img>
-      <img src="./images/apple1.jpg" class="i2"></img>
-      <img src="./images/n.jpg" class="i3"></img>
-      <img src="./images/aws.jpg" class="i4"></img>
-      <img src="./images/google.webp" class="i5"></img>
-      <img src="./images/meta.jpg" alt="m" class="i6"></img>
-      <img src="./images/tesla.jpg" alt="t" class="i7"><img>
+
+      <!-- Profile Image -->
+      <div class="relative z-200">
+        <div class="w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent/20 glow-accent">
+          <img src="./images/subject.png" alt="Profile Picture" class="w-full h-full object-cover"
+            onerror="this.src='./images/subjectbw.png'">
+        </div>
+      </div>
     </div>
 
-    <div class="rectangle-2">
-      <div class="rectangle-3">
-        <span class="exp1">.Experience</span>
-        <span class="exp"><b>Junior Software Developer XYZ Startup June 2024 - Present</b><br />In
-          my role as a Junior Software Developer, I collaborated with a small
-          team to develop and maintain responsive web applications using HTML,
-          CSS, and JavaScript. I focused on front-end tasks, achieving 80%
-          proficiency in HTML/CSS, creating user-friendly interfaces, and
-          ensuring compatibility across various devices. I also assisted with
-          backend functionalities using Python, gaining hands-on experience
-          with data processing tasks. Occasionally, I worked on minor Java and
-          Flutter tasks, further expanding my skills in both languages. This
-          role taught me essential project collaboration, debugging, and agile
-          methodologies, enhancing my technical and teamwork abilities.</span>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 my-20 opacity-70">
+      <!-- Frontend Technologies -->
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          class="h-12 object-contain hover:opacity-100 transition-opacity" alt="HTML5">
       </div>
-      <div class="flex-column-d">
-        <span class="my-skills">#Skills</span>
-        <span class="html-css">Html,css</span>
-        <div class="rectangle-4">
-          <div class="rectangle-5"></div>
-        </div>
-        <span class="python">Python</span>
-        <div class="rectangle-6">
-          <div class="rectangle-7"></div>
-        </div>
-        <span class="java">Java</span>
-        <div class="rectangle-8">
-          <div class="rectangle-9"></div>
-        </div>
-        <span class="flutter">Flutter</span>
-        <div class="rectangle-a">
-          <div class="rectangle-b"></div>
-        </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-12 object-contain"
+          alt="CSS3">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+          class="h-12 object-contain" alt="Bootstrap">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="h-12 object-contain"
+          alt="PHP">
+      </div>
+
+      <!-- MERN Stack + Angular -->
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+          class="h-12 object-contain" alt="MongoDB">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+          class="h-12 object-contain" alt="Express.js">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          class="h-12 object-contain" alt="React">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          class="h-12 object-contain" alt="Node.js">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+          class="h-12 object-contain" alt="Angular">
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          class="h-12 object-contain" alt="Python">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-12 object-contain"
+          alt="Java">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          class="h-12 object-contain" alt="JavaScript">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+          class="h-12 object-contain" alt="TypeScript">
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+          class="h-12 object-contain" alt="C++">
       </div>
     </div>
-    <br>
-    <br><br><br>
+
+    <section id="experience" class="my-20">
+      <h2 class="text-2xl font-bold mb-10 text-light">
+        <span class="text-accent">#</span> Experience & Education
+      </h2>
+
+      <!-- Education -->
+      <div class="space-y-6 mb-10">
+        <div
+          class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-4">Bachelor of Computer Science</h3>
+          <p class="text-accent">IHRD College of Engineering Kallooppara</p>
+          <p class="text-gray-400">2020 - 2024</p>
+          <p class="mt-4 text-gray-300">
+            • Core coursework: Data Structures, Algorithms, Database Management, Operating Systems, Software Engineering
+            <br />
+            • Mini Project: Product Feedback Management Website - A full-stack web application for managing customer
+            reviews and feedback using PHP, MySQL, and Bootstrap
+            <br />
+            • Final Year Project: Developed a custom programming language with lexical analysis, parsing, and code
+            generation capabilities using Python and LLVM
+          </p>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <h3 class="text-xl font-bold mb-6 text-light">
+        <span class="text-accent">></span> Work Experience
+      </h3>
+      <div
+        class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow mb-10">
+        <h3 class="text-xl font-bold mb-4">Web Development Intern</h3>
+        <p class="text-accent">Luminar Technolab</p>
+        <p class="text-gray-400">October 2023 - Present · 3 months</p>
+        <p class="text-gray-400">Kochi, Kerala, India</p>
+        <p class="mt-4 text-gray-300">
+          • Building responsive and interactive web applications using HTML5, CSS3, and JavaScript
+          <br />
+          • Implementing modern CSS techniques including Flexbox and Grid for complex layouts
+          <br />
+          • Creating dynamic user interfaces with vanilla JavaScript and DOM manipulation
+          <br />
+          • Developing custom animations and transitions for enhanced user experience
+          <br />
+          • Writing clean, maintainable, and well-documented code following best practices
+          <br />
+          • Ensuring cross-browser compatibility and mobile responsiveness
+          <br />
+          • Participating in code reviews and contributing to technical documentation
+          <br />
+          • Creating responsive and interactive user interfaces with React.js and Material-UI
+          <br />
+          • Collaborating with team members using Git for version control and Agile methodologies
+        </p>
+      </div>
+
+      <!-- Certifications & Training -->
+      <h3 class="text-xl font-bold mb-6 text-light">
+        <span class="text-accent">></span> Certifications & Training
+      </h3>
+      <div class="space-y-6">
+        <!-- Google Cloud & AI -->
+        <div
+          class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-4">Google Cloud & AI Training</h3>
+          <p class="text-accent">Google</p>
+          <p class="text-gray-400">2021 - 2024</p>
+          <ul class="mt-4 text-gray-300 space-y-2">
+            <li>• Introduction to Generative AI (Jul 2024) - Credential ID: 9865899</li>
+            <li>• Getting Started in Google Analytics (Dec 2022) - Credential ID: SJTKW7G9P55D</li>
+            <li>• Google Cloud Fundamentals for AWS Professionals (Dec 2022) - Credential ID: RYZ6Z4HN3YG8</li>
+            <li>• Learn to Earn Cloud Challenge: Data (Sep 2021)</li>
+            <li>• Learn to Earn Cloud Challenge: Essentials (Sep 2021)</li>
+          </ul>
+        </div>
+
+        <!-- Programming & Development -->
+        <div
+          class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-4">Programming & Development</h3>
+          <p class="text-accent">Various Platforms</p>
+          <p class="text-gray-400">2020 - 2022</p>
+          <ul class="mt-4 text-gray-300 space-y-2">
+            <li>• Create Your First Python Program From UST (Dec 2022) - Credential ID: 63TMS6MT8FBL</li>
+            <li>• Programming Foundations with JavaScript, HTML and CSS with Honors (Jan 2021) - Credential ID:
+              AJAGUQVZD4BB</li>
+            <li>• Learning Java (Dec 2020) - Credential ID: AaqD0pI4c8YcTR2WA-zfpKIPSsBO</li>
+          </ul>
+        </div>
+
+        <!-- Project Management & Digital Marketing -->
+        <div
+          class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-4">Project Management & Digital Marketing</h3>
+          <p class="text-accent">Professional Development</p>
+          <p class="text-gray-400">2020 - 2022</p>
+          <ul class="mt-4 text-gray-300 space-y-2">
+            <li>• Introduction to Project Management with ClickUp (Dec 2022)</li>
+            <li>• Fundamentals of Digital Marketing - Google Digital Garage (Dec 2020) - Credential ID: N6Y 42J JAM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="my-20">
+      <h2 class="text-2xl font-bold mb-10 text-light">
+        <span class="text-accent">#</span> Skills & Technologies
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Frontend Development -->
+        <div
+          class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
+            <i class="fas fa-code text-accent"></i>
+            Frontend Development
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">HTML/CSS</span>
+                <span class="text-accent">90%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[90%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Bootstrap</span>
+                <span class="text-accent">85%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[85%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Tailwind CSS</span>
+                <span class="text-accent">80%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[80%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">JavaScript</span>
+                <span class="text-accent">75%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[75%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">React.js</span>
+                <span class="text-accent">80%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[80%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Angular</span>
+                <span class="text-accent">75%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[75%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div
+          class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
+            <i class="fas fa-server text-accent"></i>
+            Backend Development
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">PHP</span>
+                <span class="text-accent">85%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[85%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">MySQL</span>
+                <span class="text-accent">80%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[80%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Python</span>
+                <span class="text-accent">85%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[85%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Java</span>
+                <span class="text-accent">75%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[75%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Node.js</span>
+                <span class="text-accent">85%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[85%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">Express.js</span>
+                <span class="text-accent">80%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[80%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-light">MongoDB</span>
+                <span class="text-accent">75%</span>
+              </div>
+              <div class="h-2 bg-dark rounded-full overflow-hidden">
+                <div class="h-full bg-accent w-[75%] transition-all duration-500 glow-accent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div
+          class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
+            <i class="fas fa-tools text-accent"></i>
+            Tools & Technologies
+          </h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fab fa-git-alt text-accent"></i>
+              Git
+            </div>
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fab fa-github text-accent"></i>
+              GitHub
+            </div>
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fas fa-database text-accent"></i>
+              SQL
+            </div>
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fas fa-terminal text-accent"></i>
+              Command Line
+            </div>
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fab fa-docker text-accent"></i>
+              Docker
+            </div>
+            <div class="flex items-center gap-2 text-light-dark">
+              <i class="fas fa-laptop-code text-accent"></i>
+              VS Code
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Skills -->
+        <div
+          class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
+          <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
+            <i class="fas fa-plus-circle text-accent"></i>
+            Additional Skills
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Responsive
+              Design</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">UI/UX
+              Design</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">RESTful
+              APIs</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Database
+              Design</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Problem
+              Solving</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Team
+              Collaboration</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Project
+              Management</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Agile/Scrum</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Server
+              Setup</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Server
+              Administration</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">PC
+              Building</span>
+            <span
+              class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono hover:glow-accent transition-all duration-300">Networking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="my-20">
+      <h2 class="text-2xl font-bold mb-10 text-light flex items-center gap-2">
+        <span class="text-accent">&lt;</span>
+        Projects
+        <span class="text-accent">/&gt;</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Restaurant Website -->
+        <div onclick="window.open('https://github.com/Ananthu26/Restaurant-Website', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-utensils text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Restaurant Website</h3>
+              <a href="https://github.com/Ananthu26/Restaurant-Website" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">An elegant slideshow & menu card with a modern grid-based layout. Features
+              responsive design for seamless viewing across devices.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">CSS Grid</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">CSS Animations</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">Responsive</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://restaurant-website-ananthu26.vercel.app/" target="_blank"
+                  class="hover:underline truncate">restaurant-website-ananthu26.vercel.app/</a>
+              </p>
+              <p class="text-xs text-gray-600 text-center">Preview Available</p>
+            </div>
+          </div>
+        </div>
+        <!-- Event Management Website -->
+        <div onclick="window.open('https://github.com/Ananthu26/Event-management-website', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-calendar-alt text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Event Management
+                Website</h3>
+              <a href="https://github.com/Ananthu26/Event-management-website" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">Modern event management platform featuring responsive design and intuitive
+              user interface.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">Tailwind CSS</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">HTML5</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://elite-event-management.vercel.app/" target="_blank"
+                  class="hover:underline truncate">elite-event-management.vercel.app/</a>
+              </p>
+              <p class="text-xs text-gray-600 text-center">Preview Available</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edu APP Bootstrap -->
+        <div onclick="window.open('https://github.com/Ananthu26/Edu-APP-Bootstrap', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-graduation-cap text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Edu APP</h3>
+              <a href="https://github.com/Ananthu26/Edu-APP-Bootstrap" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">Educational application platform built with Bootstrap framework focusing on
+              user experience.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">Bootstrap</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">HTML</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://edu-app-bootstrap.vercel.app/" target="_blank"
+                  class="hover:underline truncate">edu-app-bootstrap.vercel.app/</a>
+              </p>
+              <p class="text-xs text-gray-600 text-center">Preview Available</p>
+            </div>
+          </div>
+        </div>
+        <!-- Online Book Store -->
+        <div onclick="window.open('https://github.com/Ananthu26/Online-Book-Store', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-book text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Online Book Store
+              </h3>
+              <a href="https://github.com/Ananthu26/Online-Book-Store" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">Modern e-commerce platform with dynamic homepage, secure login, wishlist,
+              shopping cart, and streamlined checkout process.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">Bootstrap 5</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">HTML5</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">CSS3</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://bootstrapbookstore.vercel.app/" target="_blank"
+                  class="hover:underline truncate">bootstrapbookstore.vercel.app/</a>
+              </p>
+              <p class="text-xs text-gray-600 text-center">Preview Available</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Feedback Management -->
+        <div onclick="window.open('https://github.com/Ananthu26/Product-Feedback-Management', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-comments text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Product Feedback
+                Management</h3>
+              <a href="https://github.com/Ananthu26/Product-Feedback-Management" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">A platform for collecting and managing verified buyer reviews with dynamic
+              content management system.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">PHP</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">MySQL</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">Bootstrap 5</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://github.com/Ananthu26/Product-Feedback-Management" target="_blank"
+                  class="hover:underline truncate">github.com/Ananthu26/Product-Feedback-Management</a>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Skincare Website -->
+        <div onclick="window.open('https://github.com/Ananthu26/Skincare', '_blank')"
+          class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
+          <!-- Icon section -->
+          <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
+            <i class="fas fa-spa text-4xl text-accent/50"></i>
+          </div>
+          
+          <!-- Content section -->
+          <div class="flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold mb-3 text-light group-hover:text-accent transition-colors">Skincare Website
+              </h3>
+              <a href="https://github.com/Ananthu26/Skincare" target="_blank"
+                class="text-accent hover:text-accent-light transition-colors">
+                <i class="fa-brands fa-github text-xl"></i>
+              </a>
+            </div>
+            <p class="text-light-dark/70 mb-4">E-commerce platform for skincare products with modern design and
+              user-friendly interface.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">HTML</span>
+              <span class="px-3 py-1 bg-dark text-accent rounded-full text-sm font-mono">CSS</span>
+            </div>
+          </div>
+          
+          <!-- Sticky footer -->
+          <div class="mt-4 pt-4 border-t border-dark">
+            <div class="space-y-1">
+              <p class="text-sm font-mono text-accent/70 hover:text-accent transition-colors flex items-center">
+                <i class="fas fa-link mr-2"></i>
+                <a href="https://github.com/Ananthu26/Skincare" target="_blank"
+                  class="hover:underline truncate">github.com/Ananthu26/Skincare</a>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <div class="footer">
-    <p><i class="fa-solid fa-house"></i>
-      <span class="tw">twitter</span>
-      <span class="li">linkedin</span>
-      <span class="gi">github</span>
-    </p>
-  </div>
+
+  <footer class="bg-dark-lighter mt-20 py-8 border-t border-dark-light">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-6">
+          <a href="https://github.com/Ananthu26" target="_blank"
+            class="text-light-dark hover:text-accent transition-colors">
+            <i class="fa-brands fa-github text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ananth26" target="_blank"
+            class="text-light-dark hover:text-accent transition-colors">
+            <i class="fa-brands fa-linkedin text-xl"></i>
+          </a>
+        </div>
+        <p class="text-light-dark/70 text-sm font-mono">© 2024 Ananthakrishnan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

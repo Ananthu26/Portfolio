@@ -1,0 +1,21 @@
+ /* Glow effects */
+ .glow-accent {
+     box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+ }
+
+ .glow-accent:hover {
+     box-shadow: 0 0 25px rgba(124, 58, 237, 0.5);
+ }
+
+ .text-glow {
+     text-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+ }
+
+ .border-glow {
+     transition: all 0.3s ease;
+ }
+
+ .border-glow:hover {
+     box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+     border-color: rgba(124, 58, 237, 0.5);
+ }
