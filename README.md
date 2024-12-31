@@ -36,7 +36,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 ## :checkered_flag: Old html&css page ##
 
 -just a Page . Nothing Special!! {2024}
-![Screenshot](./Screenshots/htmlcss.png)
+![Screenshot](./Screenshots/hmlcss.png)
 
 
 
