@@ -22,11 +22,28 @@
   <nav class="fixed w-full bg-dark-light/90 backdrop-blur-md z-50 py-4 glow-accent">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <span class="text-2xl font-mono text-accent font-semibold text-glow">AX</span>
-      <div class="space-x-8 font-medium text-sm">
+      
+      <!-- Mobile menu Threeline -->
+      <button class="md:hidden text-accent hover:text-accent-light transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+
+      <!-- Desktop menu -->
+      <div class="hidden md:flex space-x-8 font-medium text-sm">
         <a href="#about" class="hover:text-accent transition-colors">About</a>
         <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
         <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
         <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+      </div>
+    </div>
+
+    <!-- Mobile menu  -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-4 pt-2 pb-3 space-y-2 bg-dark-light/90 backdrop-blur-md">
+        <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">About</a>
+        <a href="#experience" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Experience</a>
+        <a href="#skills" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Skills</a>
+        <a href="#projects" class="block px-3 py-2 text-base font-medium hover:text-accent transition-colors">Projects</a>
       </div>
     </div>
   </nav>
@@ -62,7 +79,7 @@
         </div>
       </div>
 
-      <!-- Profile Image -->
+      <!-- Dp Image -->
       <div class="relative z-200">
         <div class="w-60 h-60 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent/20 glow-accent">
           <img src="./images/Subject.png" alt="Profile Picture" class="w-full h-full object-cover"
@@ -72,7 +89,7 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 my-20 opacity-70">
-      <!-- Frontend Technologies -->
+      <!-- Frontend  -->
       <div class="flex justify-center">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
           class="h-12 object-contain hover:opacity-100 transition-opacity" alt="HTML5">
@@ -210,7 +227,7 @@
           </ul>
         </div>
 
-        <!-- Programming & Development -->
+        <!-- Programming & Dev -->
         <div
           class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-4">Programming & Development</h3>
@@ -224,7 +241,7 @@
           </ul>
         </div>
 
-        <!-- Project Management & Digital Marketing -->
+        <!-- Project Management  -->
         <div
           class="bg-dark-lighter p-8 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-4">Project Management & Digital Marketing</h3>
@@ -244,7 +261,7 @@
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Frontend Development -->
+        <!-- Frontend Dev -->
         <div
           class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
@@ -314,7 +331,7 @@
           </div>
         </div>
 
-        <!-- Backend Development -->
+        <!-- Backend Dev -->
         <div
           class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
@@ -394,7 +411,7 @@
           </div>
         </div>
 
-        <!-- Tools & Technologies -->
+        <!-- Tools & Tech -->
         <div
           class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
@@ -429,7 +446,7 @@
           </div>
         </div>
 
-        <!-- Additional Skills -->
+        <!-- Vere Skills -->
         <div
           class="bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow">
           <h3 class="text-xl font-bold mb-6 text-light flex items-center gap-2">
@@ -486,7 +503,7 @@
         <!-- Restaurant Website -->
         <div onclick="window.open('https://github.com/Ananthu26/Restaurant-Website', '_blank')"
           class="group bg-dark-lighter p-6 rounded-xl border border-dark-lighter hover:border-accent/20 transition-all duration-300 border-glow cursor-pointer relative flex flex-col min-h-[450px]">
-          <!-- Icon section -->
+          <!-- g Icon section -->
           <div class="mb-4 h-[150px] sm:h-[200px] bg-dark rounded-lg flex items-center justify-center">
             <i class="fas fa-utensils text-4xl text-accent/50"></i>
           </div>
@@ -723,7 +740,7 @@
 
   <footer class="bg-dark-lighter mt-20 py-8 border-t border-dark-light">
     <div class="container mx-auto px-4">
-      <div class="flex justify-between items-center">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
         <div class="flex gap-6">
           <a href="https://github.com/Ananthu26" target="_blank"
             class="text-light-dark hover:text-accent transition-colors">
@@ -734,7 +751,7 @@
             <i class="fa-brands fa-linkedin text-xl"></i>
           </a>
         </div>
-        <p class="text-light-dark/70 text-sm font-mono">© 2024 Ananthakrishnan. All rights reserved.</p>
+        <p class="text-light-dark/70 text-sm font-mono text-center">© 2024 Ananthakrishnan. All rights reserved.</p>
       </div>
     </div>
   </footer>
