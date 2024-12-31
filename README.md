@@ -19,7 +19,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
--[JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/Javascript)
+- [JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/Javascript)
 <div>
   
 
@@ -27,7 +27,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 -just a part of page dedicated to popular company and services . Nothing Special!!
 
-![Screenshot](./Screenshots/portfolio%20Gallery-box.PNG)
+![Screenshot](./Screenshots/tailwind.png)
 
 
 
@@ -35,7 +35,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 ## :checkered_flag: Old html&css page ##
 
-![Screenshot](./Screenshots/screencapture-portfolio-ax-vercel-app-2024-12-31-12_05_09.png)
+![Screenshot](./Screenshots/htmlcss.png)
 
 
 
