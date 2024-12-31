@@ -7,7 +7,8 @@
 <h1 align="center">Portfolio</h1>
 
 <p align="center">
-I am currently developing a portfolio as part of The MEAN Stack Internship, with an initial focus on HTML and CSS. This portfolio will continue to grow as I integrate additional languages and frameworks throughout the internship. My goal is to create a polished, website-ready portfolio that will effectively showcase my skills, projects, and experiences to the public.
+I am currently developing a portfolio as part of The MEAN Stack Internship, with an initial focus on HTML and CSS. Updated to Tailwind which is Major Design Jump. 
+This portfolio will continue to grow as I integrate additional languages and frameworks throughout the internship. My goal is to create a polished, website-ready portfolio that will effectively showcase my skills, projects, and experiences to the public.
 </p>
   &#xa0;
 
