@@ -19,24 +19,26 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
+-[JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/Javascript)
 <div>
   
 
-
-## :checkered_flag: Welcome Page ##
-
--consists of github profile Image and Bio  
-![Screenshot](./Screenshots/portfolio%20intro.PNG)
-
-
 ## Gallery
+
 -just a part of page dedicated to popular company and services . Nothing Special!!
+
 ![Screenshot](./Screenshots/portfolio%20Gallery-box.PNG)
 
-## Skills and Experience
--this is where i indent to add experience and skills. For now this is what i got!!
-![Screenshot](./Screenshots/portfolio%20mid-box.PNG)
+
+
+
+
+## :checkered_flag: Old html&css page ##
+
+![Screenshot](./Screenshots/screencapture-portfolio-ax-vercel-app-2024-12-31-12_05_09.png)
+
+
+
 
 
 
