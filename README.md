@@ -23,9 +23,9 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 <div>
   
 
-## Gallery
+## 2025
 
--just a part of page dedicated to popular company and services . Nothing Special!!
+-New Much improved Personal Portfolio {2025}
 
 ![Screenshot](./Screenshots/tailwind.png)
 
@@ -35,6 +35,7 @@ I am currently developing a portfolio as part of The MEAN Stack Internship, with
 
 ## :checkered_flag: Old html&css page ##
 
+-just a Page . Nothing Special!! {2024}
 ![Screenshot](./Screenshots/htmlcss.png)
 
 
